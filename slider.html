@@ -110,6 +110,7 @@
                 prevBtn.style.display = 'block'
             } else {
                 nextBtn.style.display = 'none';
+                counter = sliders.length - 1;
             }
             sliders.forEach(function (slide, index) {
                 slide.style.transform = `translateX(-${counter * 100}%)`
